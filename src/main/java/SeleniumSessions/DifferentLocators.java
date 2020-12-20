@@ -14,7 +14,7 @@ public class DifferentLocators {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
-		//driver.get("https://www.orangehrm.com/orangehrm-30-day-trial/");
+		driver.get("https://www.orangehrm.com/orangehrm-30-day-trial/");
 		//Thread.sleep(6000);
 		
 		//1. id:unique
@@ -48,7 +48,7 @@ public class DifferentLocators {
 		driver.get("https://authentication.td.com/uap-ui/index.html?consumer=easyweb&locale=en_CA#/login/easyweb-getting-started");
 		Thread.sleep(6000);
 		
-		driver.findElement(By.className("ng-pristine ng-valid form-control ng-empty ng-untouched")).sendKeys("123345345");
+		driver.findElement(By.className("otp-always-show-error")).sendKeys("123345345");
 		
 		//form-control private-form__control login-email
 		//form-control private-form__control login-password m-bottom-3
