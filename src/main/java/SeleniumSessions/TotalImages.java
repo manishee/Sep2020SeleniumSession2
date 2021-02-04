@@ -33,6 +33,7 @@ public class TotalImages {
 		}
 		
 		System.out.println("-------------------");
+		
 		List<String> hrefList=getAttributesList("a", "href");
 		for(String s :hrefList) {
 			System.out.println(s);
@@ -63,8 +64,6 @@ public class TotalImages {
 			}
 			return attrList;
 		}
-		
-	
 	}
 
 
