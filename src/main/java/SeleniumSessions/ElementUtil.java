@@ -104,5 +104,17 @@ public class ElementUtil {
 		select.selectByValue(value);
 	}
 	
+	public void selectDropDownValueWithoutSelectClass(By locator, String value) {
+		
+		List<WebElement> optionList=getElements(locator);
+		
+		for(WebElement e : optionList) {
+			String text=e.getText();
+			if(text.equals(value)) {
+				e.click();
+				break;
+			}
+		}
+		}
 	
 }
