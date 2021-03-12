@@ -39,31 +39,42 @@ public class JqueryDropDownHandle {
 		// Multiple Selection
 		// selectChoiceFromDropDown(choice_span, "choice 6", "choice 2", "choice 7");
 		// Single Selection
-		//selectChoiceFromDropDown(choice_span, "choice 6 2 2");
-		
+		// selectChoiceFromDropDown(choice_span, "choice 6 2 2");
+		// All Selection
+		selectChoiceFromDropDown(choice_span, "all");
 
 	}
 
 	public static void selectChoiceFromDropDown(By locator, String... value) {
 		List<WebElement> choiceList = driver.findElements(locator);
 		System.out.println(choiceList.size());
-
-		for (int i = 0; i < choiceList.size(); i++) {
-			String text = choiceList.get(i).getText();
-			System.out.println(text);
+		if (!value[0].equals("all")) {
+			for (int i = 0; i < choiceList.size(); i++) {
+				String text = choiceList.get(i).getText();
+				System.out.println(text);
 
 //				if (text.equals(value)) {
 //				choiceList.get(i).click();
 //				break;
 //			}
 
-			for (int j = 0; j < value.length; j++) {
-				if (text.equals(value[j])) {
-					choiceList.get(i).click();
-					break;
+				for (int j = 0; j < value.length; j++) {
+					if (text.equals(value[j])) {
+						choiceList.get(i).click();
+						break;
+					}
 				}
+
 			}
 
+		} else {
+			try {
+				for (WebElement e : choiceList) {
+					e.click();
+				}
+			} catch (Exception e) {
+
+			}
 		}
 	}
 
