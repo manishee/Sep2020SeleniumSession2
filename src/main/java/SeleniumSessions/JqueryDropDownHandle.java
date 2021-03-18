@@ -23,17 +23,18 @@ public class JqueryDropDownHandle {
 		driver.findElement(By.id("justAnInputBox")).click();
 		Thread.sleep(2000);
 
-//		List<WebElement> choiceList = driver.findElements(By.xpath("//span[@class='comboTreeItemTitle']"));
-//		System.out.println(choiceList.size());
-//
-//		for (int i = 0; i < choiceList.size(); i++) {
-//			String text = choiceList.get(i).getText();
-//			System.out.println(text);
-//			if (text.equals("choice 7")) {
-//				choiceList.get(i).click();
-//				break;
-//			}
-//		}
+		// List<WebElement> choiceList =
+		// driver.findElements(By.xpath("//span[@class='comboTreeItemTitle']"));
+		// System.out.println(choiceList.size());
+		//
+		// for (int i = 0; i < choiceList.size(); i++) {
+		// String text = choiceList.get(i).getText();
+		// System.out.println(text);
+		// if (text.equals("choice 7")) {
+		// choiceList.get(i).click();
+		// break;
+		// }
+		// }
 
 		By choice_span = By.xpath("//span[@class='comboTreeItemTitle']");
 		// Multiple Selection
@@ -53,10 +54,10 @@ public class JqueryDropDownHandle {
 				String text = choiceList.get(i).getText();
 				System.out.println(text);
 
-//				if (text.equals(value)) {
-//				choiceList.get(i).click();
-//				break;
-//			}
+				// if (text.equals(value)) {
+				// choiceList.get(i).click();
+				// break;
+				// }
 
 				for (int j = 0; j < value.length; j++) {
 					if (text.equals(value[j])) {
