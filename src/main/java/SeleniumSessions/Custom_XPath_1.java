@@ -63,7 +63,7 @@ public class Custom_XPath_1 {
 		//a[@href='https://register.freecrm.com/register/' and contains(text(), 'Sign')] 
 		//input[starts-with(@id, 'username')]
 
-		//* --> Totak nodes in HTML DOM
+		//* --> Total   nodes in HTML DOM
 		
 	}
 
