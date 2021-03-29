@@ -38,6 +38,8 @@ public class Custom_Xpath_2 {
 		selectContact("Tatiana B");
 		selectContact("Tenveer Hussain");
 		
+		
+		System.out.println(getContactCountry("Angelo Dipaolo"));
 	}
 
 	public static void selectContact(String name) {
@@ -46,8 +48,15 @@ public class Custom_Xpath_2 {
 				+ "//parent::td//preceding-sibling::td/div";
 		driver.findElement(By.xpath(checkbox_xpath)).click();
 	
-	
 	}
+	
+	public static String getContactCountry(String name) {
+		//a[text()='Tatiana B']//ancestor::td//following-sibling::td
+		return 
+		driver.findElement
+		(By.xpath("//a[text()='"+name+"']//ancestor::td//following-sibling::td")).getText();
+	}
+	
 	
 }
 	
