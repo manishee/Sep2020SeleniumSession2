@@ -29,7 +29,8 @@ public class ExplicitWaitConcept {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://classic.crmpro.com/index.html");
 		WebDriverWait wait=new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.titleContains("CRMPRO"));		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username"))).sendKeys("test@gmail.com");;
+		//wait.until(ExpectedConditions.titleContains("CRMPRO"));		
 		System.out.println(driver.getTitle());
 		
 		 
