@@ -32,7 +32,7 @@ public class ExplicitWaitConcept {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username"))).sendKeys("test@gmail.com");;
 		//wait.until(ExpectedConditions.titleContains("CRMPRO"));		
 		System.out.println(driver.getTitle());
-		
+
 		 
 		
 		
