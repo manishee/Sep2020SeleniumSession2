@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Running test suite(failed)">
+    <classes>
+      <class name="TestNGSessions.TestNGBasics">
+        <methods>
+          <include name="generateReport"/>
+          <include name="setUp"/>
+          <include name="enterURL"/>
+          <include name="deleteAllCookies"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="getTitleTest"/>
+        </methods>
+      </class> <!-- TestNGSessions.TestNGBasics -->
+      <class name="TestNGSessions.TEKsystemsTitleTest">
+        <methods>
+          <include name="tekLogoTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestNGSessions.TEKsystemsTitleTest -->
+    </classes>
+  </test> <!-- Running test suite(failed) -->
+</suite> <!-- Failed suite [TestNG] -->

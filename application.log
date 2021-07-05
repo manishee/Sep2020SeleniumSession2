@@ -1,0 +1,7 @@
+2021-06-10 12:39:34,063  INFO [main] GenerateLogs:22 - launching browser
+2021-06-10 12:39:34,066  INFO [main] GenerateLogs:23 - browser has been launched
+2021-06-10 12:39:36,118  INFO [main] GenerateLogs:26 - navigated to teksystems.com website
+2021-06-10 12:39:36,130  INFO [main] GenerateLogs:31 - the title of the page is TEKsystems. Let's own change, together.
+2021-06-10 12:39:36,130  INFO [main] GenerateLogs:32 - captured the title of the page
+2021-06-10 12:39:36,131  INFO [main] GenerateLogs:36 - correct title and the test case is passed
+2021-06-10 12:39:36,131  INFO [main] GenerateLogs:42 - quit the browser

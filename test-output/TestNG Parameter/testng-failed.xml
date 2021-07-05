@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG Parameter]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Running test suite Parameter(failed)">
+    <parameter name="password" value="test@!123"/>
+    <parameter name="browser" value="safari"/>
+    <parameter name="url" value="https://classic.crmpro.com/index.html"/>
+    <parameter name="username" value="manishchugh"/>
+    <classes>
+      <class name="Parameter.parameterhandling">
+        <methods>
+          <include name="classicCRMLoginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Parameter.parameterhandling -->
+    </classes>
+  </test> <!-- Running test suite Parameter(failed) -->
+</suite> <!-- Failed suite [TestNG Parameter] -->

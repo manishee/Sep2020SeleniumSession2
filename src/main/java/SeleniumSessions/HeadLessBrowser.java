@@ -18,15 +18,15 @@ public class HeadLessBrowser {
 		//testing is happening behind the scene
 		//faster than the normal mode
 		
-//		WebDriverManager.chromedriver().setup();
-//		ChromeOptions co=new ChromeOptions();
-//		co.addArguments("--headless");
-//		WebDriver driver=new ChromeDriver(co);
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions co=new ChromeOptions();
+		co.addArguments("--headless");
+		WebDriver driver=new ChromeDriver(co);
 //		
-		WebDriverManager.firefoxdriver().setup();
-		FirefoxOptions fo=new FirefoxOptions();
-		fo.addArguments("--headless");
-		WebDriver driver=new FirefoxDriver(fo);
+//		WebDriverManager.firefoxdriver().setup();
+//		FirefoxOptions fo=new FirefoxOptions();
+//		fo.addArguments("--headless");
+//		WebDriver driver=new FirefoxDriver(fo);
 		
 		driver.get("https://www.google.com");
 		System.out.println(driver.getTitle());
